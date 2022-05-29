@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.form-container {
+    width: 25%;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 5px;
+
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.block {
+    margin-bottom: 7px;
+}
+
+.radios {
+    display: flex;
+}
+
+.radios input {
+    margin: 5px;
+}
+
+#send-btn {
+    width: 100%;
+}
