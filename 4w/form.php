@@ -22,11 +22,11 @@
     <div class="form-container">
         <form method="POST" action="">
             <div class="input-group block">
-                <input type="text" class="form-control" name="name" placeholder="Ваше имя" 
+                <input type="text" class="<?php (($errors['name']) ? 'error': 'form-control')?>" name="name" placeholder="Ваше имя" 
                 <?php if ($errors['name']) {print 'class="error"';} ?> value="<?php print $values['name']; ?>"/>
             </div>
             <div class="input-group block">
-                <input type="text" class="form-control" name="email" placeholder="example@mail.ru" 
+                <input type="text" class="<?php (($errors['email']) ? 'error': 'form-control')?>" name="email" placeholder="example@mail.ru" 
                 <?php if ($errors['email']) {print 'class="error"';} ?> value="<?php print $values['email']; ?>"/>
             </div>
             <div class="block" id="date-block">
