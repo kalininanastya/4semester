@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block">
+            <div class="block" id="superpowers">
                 <span class="block-title">Способности</span>
                 <select name="select[]" multiple <?php if ($errors['select']) {print 'class="error"';} ?>>
                     <option value="inf" <?php $arr = explode(',', $values['select']);
@@ -100,7 +100,7 @@
                                         ?>>Левитация</option>
                 </select>
             </div>
-            <div class="input-group">
+            <div class="block">
             <textarea placeholder="Расскажите о себе..." name="bio" <?php if ($errors['bio']) {print 'class="error"';} ?>><?php print $values['bio']; ?></textarea>
             </div>
             <div class="form-check">
