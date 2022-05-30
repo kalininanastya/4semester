@@ -64,3 +64,18 @@ input, textarea {
 .login div {
     margin-bottom: 7px;
 }
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 2px solid #E3E6EC;
+    border-collapse: collapse;
+}
+
+td, th {
+    font-size: 13px;
+    padding: 0px 8px;
+}
