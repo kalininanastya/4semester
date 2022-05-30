@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 25%;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 5px;
+
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.block {
+    margin-bottom: 7px;
+    display: flex;
+}
+
+#superpowers {
+    flex-direction: column;
+}
+
+.radios {
+    display: flex;
+}
+
+.radios input {
+    margin: 5px;
+}
+
+#send-btn {
+    width: 100%;
+}
+
+.error {
+    border: 1px solid rgb(228, 4, 4) !important;
+    box-shadow: 0px 15px 20px rgba(228, 4, 4, 0.5) !important;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 50px auto;
+}
+
+.login div {
+    margin-bottom: 7px;
+}
