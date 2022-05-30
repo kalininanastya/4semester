@@ -12,7 +12,7 @@
 <body>
     <?php
     if (!empty($messages)) {
-        print('<div id="messages">');
+        print('<div class="messages">');
         foreach ($messages as $message) {
             print($message);
         }
