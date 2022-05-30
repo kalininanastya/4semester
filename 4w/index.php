@@ -22,35 +22,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     if ($errors['name']) {
         setcookie('name_error', '', 100000);
-        $messages[] = '<div class="error">Введите корректное имя(оно не может быть пустым и может содержать только буквы).</div>';
+        $messages[] = '<div >Введите корректное имя(оно не может быть пустым и может содержать только буквы).</div>';
     }
     if ($errors['email']) {
         setcookie('email_error', '', 100000);
-        $messages[] = '<div class="error">Введите корректный email.</div>';
+        $messages[] = '<div >Введите корректный email.</div>';
     }
     if ($errors['date']) {
         setcookie('date_error', '', 100000);
-        $messages[] = '<div class="error">Введите корректную дату рождения.</div>';
+        $messages[] = '<div >Введите корректную дату рождения.</div>';
     }
     if ($errors['gender']) {
         setcookie('gender_error', '', 100000);
-        $messages[] = '<div class="error">Выберите пол.</div>';
+        $messages[] = '<div >Выберите пол.</div>';
     }
     if ($errors['limbs']) {
         setcookie('limbs_error', '', 100000);
-        $messages[] = '<div class="error">Выберите количество конечностей.</div>';
+        $messages[] = '<div >Выберите количество конечностей.</div>';
     }
     if ($errors['select']) {
         setcookie('select_error', '', 100000);
-        $messages[] = '<div class="error">Выберите суперспособнос(ть/ти).</div>';
+        $messages[] = '<div >Выберите суперспособнос(ть/ти).</div>';
     }
     if ($errors['bio']) {
         setcookie('bio_error', '', 100000);
-        $messages[] = '<div class="error">Расскажите о себе.</div>';
+        $messages[] = '<div >Расскажите о себе.</div>';
     }
     if ($errors['policy']) {
         setcookie('policy_error', '', 100000);
-        $messages[] = '<div class="error">Ознакомтесь с политикой обработки данных.</div>';
+        $messages[] = '<div >Ознакомтесь с политикой обработки данных.</div>';
     }
 
     $values = array();
