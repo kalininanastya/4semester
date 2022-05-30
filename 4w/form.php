@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <?php
+    <div class="form-container">
+        <?php
     if (!empty($messages)) {
-        print('<div class="messages">');
+        print('<div id="messages">');
         foreach ($messages as $message) {
             print($message);
         }
         print('</div>');
     }
     ?>
-    <div class="form-container">
         <form method="POST" action="">
             <div class="input-group block">
                 <input type="text" name="name" placeholder="Ваше имя" 
@@ -35,20 +35,20 @@
                 <?php if ($errors['date']) { print 'class="error"';} ?> value="<?php print $values['date']; ?>"/>
             </div>
             <div class="block" id="gender-block">
-                <span class="block-title">Пол</span>
+                <span class="block-title" <?php if ($errors['gender']) { print 'class="error"';} ?>>Пол</span>
                 <div class="radios">
                     <div class="male-radio">
-                        <input class="" type="radio" name="gender" value="m" <?php if ($values['gender'] == 'm') {print 'checked';}; ?>/>
-                        <label class="" for="male">Мужской</label>
+                        <input type="radio" name="gender" value="m" <?php if ($values['gender'] == 'm') {print 'checked';}; ?>/>
+                        <label for="male" >Мужской</label>
                     </div>
                     <div class="female-radio">
-                        <input class="" type="radio" name="gender" value="f" <?php if ($values['gender'] == 'f') {print 'checked';}; ?>/>
-                        <label class="" for="female">Женский</label>
+                        <input  type="radio" name="gender" value="f" <?php if ($values['gender'] == 'f') {print 'checked';}; ?>/>
+                        <label for="female">Женский</label>
                     </div>
                 </div>
             </div>
             <div class="block" id="limbs-block">
-                <span class="block-title">Конечности</span>
+                <span class="block-title" <?php if ($errors['limbs']) { print 'class="error"';} ?>>Конечности</span>
                 <div class="radios">
                     <div class="limbs-radio">
                         <input class="form-check-input" type="radio" name="limbs" value="1" <?php if ($values['limbs'] == '1') {print 'checked';}; ?>/>
