@@ -33,4 +33,5 @@
 
 .error {
     color: rgb(228, 4, 4);
+    box-shadow: 0px 10px 20px red;
 }
