@@ -63,7 +63,7 @@ else {
     $member_pass_hash = md5($_POST['pass']);
 
     try {
-        $stmt = $db->prepare("SELECT * FROM memebers WHERE login = ?");
+        $stmt = $db->prepare("SELECT * FROM members WHERE login = ?");
         $stmt->execute(array($member));
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
