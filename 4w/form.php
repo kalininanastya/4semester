@@ -26,12 +26,12 @@
                 <?php if ($errors['name']) {print 'class="error"';} ?> value="<?php print $values['name']; ?>"/>
             </div>
             <div class="input-group block">
-                <input type="text" class="<?php (($errors['email']) ? 'error': 'form-control')?>" name="email" placeholder="example@mail.ru" 
+                <input type="text" name="email" placeholder="example@mail.ru" 
                 <?php if ($errors['email']) {print 'class="error"';} ?> value="<?php print $values['email']; ?>"/>
             </div>
             <div class="block" id="date-block">
                 <span class="block-title">Дата рождения</span>
-                <input type="date" class="form-control" name="date" 
+                <input type="date" name="date" 
                 <?php if ($errors['date']) { print 'class="error"';} ?> value="<?php print $values['date']; ?>"/>
             </div>
             <div class="block" id="gender-block">
@@ -70,7 +70,7 @@
             </div>
             <div class="block">
                 <span class="block-title">Способности</span>
-                <select class="form-select form-select-lg mb-2" name="select[]" multiple <?php if ($errors['select']) {print 'class="error"';} ?>>
+                <select name="select[]" multiple <?php if ($errors['select']) {print 'class="error"';} ?>>
                     <option value="inf" <?php $arr = explode(',', $values['select']);
                                         if ($arr != '') {
                                             foreach ($arr as $value) {
@@ -101,7 +101,7 @@
                 </select>
             </div>
             <div class="input-group">
-            <textarea class="form-control" placeholder="Расскажите о себе..." name="bio" <?php if ($errors['bio']) {print 'class="error"';} ?>><?php print $values['bio']; ?></textarea>
+            <textarea placeholder="Расскажите о себе..." name="bio" <?php if ($errors['bio']) {print 'class="error"';} ?>><?php print $values['bio']; ?></textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="y" id="policy" name="policy" checked/>
