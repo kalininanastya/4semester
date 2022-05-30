@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <div class="form-container">
-        <?php
+    <?php
     if (!empty($messages)) {
         print('<div id="messages">');
         foreach ($messages as $message) {
@@ -20,6 +19,7 @@
         print('</div>');
     }
     ?>
+    <div class="form-container">
         <form method="POST" action="">
             <div class="input-group block">
                 <input type="text" name="name" placeholder="Ваше имя" 
@@ -35,7 +35,7 @@
                 <?php if ($errors['date']) { print 'class="error"';} ?> value="<?php print $values['date']; ?>"/>
             </div>
             <div class="block" id="gender-block">
-                <span class="block-title" <?php if ($errors['gender']) { print 'class="error"';} ?>>Пол</span>
+                <span  <?php if ($errors['gender']) { print 'class="error"';} ?>>Пол</span>
                 <div class="radios">
                     <div class="male-radio">
                         <input type="radio" name="gender" value="m" <?php if ($values['gender'] == 'm') {print 'checked';}; ?>/>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="block" id="limbs-block">
-                <span class="block-title" <?php if ($errors['limbs']) { print 'class="error"';} ?>>Конечности</span>
+                <span <?php if ($errors['limbs']) { print 'class="error"';} ?>>Конечности</span>
                 <div class="radios">
                     <div class="limbs-radio">
                         <input class="form-check-input" type="radio" name="limbs" value="1" <?php if ($values['limbs'] == '1') {print 'checked';}; ?>/>
