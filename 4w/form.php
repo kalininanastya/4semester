@@ -23,16 +23,16 @@
         <form method="POST" action="">
             <div class="input-group block">
                 <input type="text" class="form-control" name="name" placeholder="Ваше имя" 
-                <?php if ($errors['name']) {echo 'class="error"';} ?> value="<?php print $values['name']; ?>"/>
+                <?php if ($errors['name']) {print 'class="error"';} ?> value="<?php print $values['name']; ?>"/>
             </div>
             <div class="input-group block">
                 <input type="text" class="form-control" name="email" placeholder="example@mail.ru" 
-                <?php if ($errors['email']) {echo 'class="error"';} ?> value="<?php print $values['email']; ?>"/>
+                <?php if ($errors['email']) {print 'class="error"';} ?> value="<?php print $values['email']; ?>"/>
             </div>
             <div class="block" id="date-block">
                 <span class="block-title">Дата рождения</span>
                 <input type="date" class="form-control" name="date" 
-                <?php if ($errors['date']) { echo 'class="error"';} ?> value="<?php print $values['date']; ?>"/>
+                <?php if ($errors['date']) { print 'class="error"';} ?> value="<?php print $values['date']; ?>"/>
             </div>
             <div class="block" id="gender-block">
                 <span class="block-title">Пол</span>
