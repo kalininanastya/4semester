@@ -22,7 +22,7 @@
     <div class="form-container">
         <form method="POST" action="">
             <div class="input-group block">
-                <input type="text" class="<?php (empty($errors['name']) ? 'error': 'form-control')?>" name="name" placeholder="Ваше имя" 
+                <input type="text" name="name" placeholder="Ваше имя" 
                 <?php if ($errors['name']) {print 'class="error"';} ?> value="<?php print $values['name']; ?>"/>
             </div>
             <div class="input-group block">
