@@ -22,9 +22,7 @@
                 <input type="date" name="date" />
             </div>
             <div class="block" id="gender-block">
-                <span <?php if ($errors['gender']) {
-                            print 'class="error"';
-                        } ?>>Пол</span>
+                <span>Пол</span>
                 <div class="radios">
                     <div class="male-radio">
                         <input type="radio" name="gender" value="m" />
